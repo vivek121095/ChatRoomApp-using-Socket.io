@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0,width=device-width">
+    <title>Websockets 101</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Pacifico|Satisfy|Wendy+One" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="wrapper">
+    <header><h1 id="title">ROBOChat</h1>
+    <div id="color-choice">
+      <span id="orange">Orange</span>
+      <span id="red">Red</span>
+      <span id="pink">Pink</span>
+    </div>
+    </header>
+
+      <div id="mario-chat">
+        <form id="chat">
+        <div id="chat-window">
+          <div id="signin">
+            <input type="text" id="handle" autocomplete="off" maxlength="10" placeholder="Enter username" required>
+            <button type="button" id="login">Login</button>
+          </div>
+          <div id="output">
+
+          </div>
+          <div id="feedback">
+
+          </div>
+        </div>
+        <textarea  id="message" placeholder="Type a message" maxlength="100" autocomplete="off" rows=3 cols="20" required disabled></textarea>
+        <button type="submit" id="send" disabled>Send</button>
+        </form>
+      </div>
+      <script type="text/javascript" src="jquery.js"></script>
+      <script type="text/javascript" src="chat.js"></script>
+      </div>
+  </body>
+</html>
